@@ -9,13 +9,20 @@
 </div>
 <div>
 <ul>
-  <ng-container *ngFor="let Nom_planeta of SistemaSolar">  
-    <li *ngIf="SistemaSolar.activo">
-      {{SistemaSolar.Nom_planeta}}
-    </li>
-  </ng-container>
-</ul>
-</div>
+    <ng-container>
+      <li>
+      <table>       
+        <tr *ngFor="let SistemaSolar of SistemaSolar"> 
+          <td>{{SistemaSolar.Nom_planeta}}</td>
+          <td>{{SistemaSolar.Distanciasol}}</td>
+          <td>{{SistemaSolar.Cantlunas}}</td>
+          <td>{{SistemaSolar.Masa}}</td>
+        </tr>
+             
+          </table>
+        </li>
+      </ng-container>
+    </ul>
 <h2>Here are some links to help you start: </h2>
 
 
